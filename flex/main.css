@@ -117,3 +117,8 @@ main {
   color: #000000;
   border: 1px solid #000000;
 }
+
+.read-more:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
