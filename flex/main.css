@@ -59,7 +59,7 @@ li {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  height: 200px; /* 統一高度 */
+  height: 100%; /* 統一高度 */
   overflow: hidden; /* 隱藏超出內容 */
 }
 
