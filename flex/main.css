@@ -1,0 +1,32 @@
+@import url("./reset.css");
+
+/* 基本樣式 */
+* {
+  box-sizing: border-box; /* 讓所有元素的寬高計算都包含 padding 和 border */
+  margin: 0; /* 清除所有元素的外邊距 */
+  padding: 0; /* 清除所有元素的內邊距 */
+}
+
+body {
+  font-family: Arial, "微軟正黑體", sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+  padding: 20px;
+  max-width: 1920px; /* 設定最大寬度 */
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; /* 允許換行 */
+  gap: 24px; /* 元素之間的間距 */
+  margin: 0 auto;
+  justify-content: center;
+  padding: 40px;
+}
+
+li {
+  width: calc(33.333% - 16px); /* 三欄佈局，減去間距 */
+  min-width: 300px;
+  margin-bottom: 20px;
+}
