@@ -6,8 +6,8 @@
 }
 
 body {
-  font-family: Arial, "微軟正黑體", sans-serif;
-  line-height: 1.6;
+  font-family: "Noto Sans TC", "微軟正黑體", sans-serif;
+  line-height: 1.5;
   background-color: #f8f8f8;
   padding: 20px;
   max-width: 1920px; /* 設定最大寬度 */
@@ -80,35 +80,27 @@ main {
 }
 
 .date {
-  font-family: Noto Sans TC;
   font-weight: 500;
   font-size: 16px;
-  line-height: 150%;
   letter-spacing: 0%;
 }
 
 .hashtag {
   color: #0027d5;
-  font-family: Noto Sans TC;
   font-weight: 500;
   font-size: 24px;
-  line-height: 150%;
   letter-spacing: 0%;
 }
 
 .title {
-  font-family: Noto Sans TC;
   font-weight: 700;
   font-size: 28px;
-  line-height: 150%;
   letter-spacing: 0%;
 }
 
 .description {
-  font-family: Noto Sans TC;
   font-weight: 500;
   font-size: 16px;
-  line-height: 150%;
   letter-spacing: 0%;
   color: #4b4b4b;
 }
