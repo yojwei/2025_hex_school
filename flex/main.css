@@ -5,7 +5,6 @@
   box-sizing: border-box; /* 讓所有元素的寬高計算都包含 padding 和 border */
   margin: 0; /* 清除所有元素的外邊距 */
   padding: 0; /* 清除所有元素的內邊距 */
-  outline: 1px solid red;
 }
 
 body {
@@ -53,4 +52,46 @@ li {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  height: 200px; /* 統一高度 */
+  overflow: hidden; /* 隱藏超出內容 */
+}
+
+.date {
+  font-family: Noto Sans TC;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.hashtag {
+  color: #0027d5;
+  font-family: Noto Sans TC;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.title {
+  font-family: Noto Sans TC;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.description {
+  font-family: Noto Sans TC;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #4b4b4b;
 }
