@@ -23,6 +23,7 @@ ul {
   margin: 0 auto;
   justify-content: center;
   padding: 40px;
+  max-width: 1200px; /* 設定最大寬度 */
 }
 
 li {
@@ -94,4 +95,17 @@ li {
   line-height: 150%;
   letter-spacing: 0%;
   color: #4b4b4b;
+}
+
+/* 卡片底部 */
+.card-footer {
+  padding: 15px 20px;
+}
+
+.read-more {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 40px;
+  color: #000000;
+  border: 1px solid #000000;
 }
