@@ -1,0 +1,5 @@
+/* 引入 reset.css */
+@import url("./reset.css");
+
+/* 引入主要樣式 */
+@import url("./main.css");

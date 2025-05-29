@@ -1,5 +1,3 @@
-@import url("./reset.css");
-
 /* 基本樣式 */
 * {
   box-sizing: border-box; /* 讓所有元素的寬高計算都包含 padding 和 border */
