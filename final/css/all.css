@@ -69,3 +69,22 @@ i {
     padding: 0 2px; /* 調整內邊距 */
   }
 }
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 40px;
+  padding: 24px 80px;
+}
+
+.nav-item {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.nav-item:hover {
+  border-bottom: gray 2px solid;
+}
