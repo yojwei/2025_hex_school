@@ -93,3 +93,66 @@ footer {
   text-align: center;
   padding: 24px 0;
 }
+
+/* blog page */
+.banner {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 90px); /* 90px 是 navbar 的高度，製造好看的畫面(滿版) */
+}
+
+.banner-photo {
+  width: 50%;
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/index/Hero%20Section.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #0027d5;
+  padding: 300px 80px;
+  gap: 12px;
+}
+
+.banner-title {
+  font-size: 120px;
+  font-weight: 900;
+}
+
+.banner-description {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* 小型平板與大型手機的媒體查詢 */
+@media (max-width: 767px) {
+  .banner {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .banner-photo,
+  .banner-text {
+    width: 100%;
+  }
+
+  .banner-photo {
+    height: calc(
+      100vh - 90px - 180px
+    ); /* 減去 navbar 的高度和 banner-text 的高度 */
+  }
+
+  .banner-text {
+    padding: 24px;
+    text-align: center;
+  }
+
+  .banner-title {
+    font-size: 52px;
+  }
+}
