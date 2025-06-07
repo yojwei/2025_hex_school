@@ -46,6 +46,14 @@ i {
   padding: 0 12px;
 }
 
+.ellipsis-mutiple {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
 /* 平板裝置的媒體查詢 */
 @media (max-width: 992px) {
   .container {
@@ -233,12 +241,15 @@ footer {
   font-size: 28px;
 }
 
-.card-footer {
-  border-radius: 40px;
-  border: 1px solid #000000;
+.read-more {
+  text-decoration: none;
   padding: 8px 16px;
+  border-radius: 40px;
+  color: #000000;
+  border: 1px solid #000000;
 }
 
-.read-more {
-  color: #4b4b4b;
+.read-more:hover {
+  background-color: #000000;
+  color: #ffffff;
 }
