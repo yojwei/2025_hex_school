@@ -88,3 +88,7 @@ i {
 .nav-item:hover {
   border-bottom: gray 2px solid;
 }
+
+footer {
+  text-align: center;
+}
