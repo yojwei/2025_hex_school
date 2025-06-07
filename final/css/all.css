@@ -1,3 +1,71 @@
 @import url("./reset.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+
+/**
+ * Global styles
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  background-color: #fbfbfb;
+}
+
+i {
+  display: inline-block;
+  line-height: 1;
+}
+
+/**
+ * Utility classes
+ */
+.container {
+  width: 100%;
+  max-width: 1320px; /* 最寬的元素(1296px) + padding(12px * 2) */
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+/* 平板裝置的媒體查詢 */
+@media (max-width: 992px) {
+  .container {
+    max-width: 768px; /* 平板裝置的最大寬度 */
+    padding: 0 8px; /* 調整內邊距 */
+  }
+}
+
+/* 小型平板與大型手機的媒體查詢 */
+@media (max-width: 767px) {
+  .container {
+    max-width: 576px; /* 小型平板與大型手機的最大寬度 */
+    padding: 0 4px; /* 調整內邊距 */
+  }
+}
+
+/* 小型手機的媒體查詢 */
+@media (max-width: 576px) {
+  .container {
+    max-width: 375px; /* 小型手機的最大寬度 */
+    padding: 0 2px; /* 調整內邊距 */
+  }
+}
