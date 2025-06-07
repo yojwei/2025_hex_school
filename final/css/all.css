@@ -177,7 +177,7 @@ footer {
 }
 
 .latest-post-photo {
-  width: 50%;
+  width: calc(50vw - 24px); /* 修正計算式中的空格，確保正確解析 */
   height: 640px;
   background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/blog/About%20Section.png");
   background-size: cover;
@@ -194,21 +194,18 @@ footer {
 }
 
 .latest-post-text .card {
-  width: 636px;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
 .latest-post-text .card-body {
-  width: 636px;
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
 
 .latest-post-text .article {
-  width: 636px;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -252,4 +249,17 @@ footer {
 .read-more:hover {
   background-color: #000000;
   color: #ffffff;
+}
+
+/* 平板裝置的媒體查詢 */
+@media (max-width: 768px) {
+  .latest-post {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .latest-post-photo,
+  .latest-post-text {
+    width: 100%;
+  }
 }
