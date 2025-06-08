@@ -305,3 +305,43 @@ h2.title {
 .posts-list .card-footer {
   padding: 15px 20px;
 }
+
+.hashtag {
+  display: flex;
+  font-size: 24px;
+  color: #0027d5;
+  align-items: center;
+  gap: 8px;
+}
+
+.latest {
+  border-radius: 40px;
+  padding: 6px 12px;
+  background: #0027d5;
+  color: #fff;
+  font-size: 16px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.read-more {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 40px;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+.read-more:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
