@@ -141,6 +141,13 @@ footer {
   font-weight: 700;
 }
 
+/* 平板裝置的媒體查詢 */
+@media (max-width: 992px) {
+  .banner-text {
+    padding-left: 40px;
+  }
+}
+
 /* 小型平板與大型手機的媒體查詢 */
 @media (max-width: 767px) {
   .banner {
