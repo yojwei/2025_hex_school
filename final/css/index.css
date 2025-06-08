@@ -143,6 +143,12 @@ h2.title {
   margin-right: -40px;
 }
 
+.list-item .list-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
 .list-item + .reverse > .list-img {
   margin-right: 0;
   margin-left: -40px;
@@ -203,6 +209,10 @@ h2.title {
   .list-item .list-img {
     width: 100%;
     margin: 0;
+  }
+
+  .list-img img {
+    width: 100%;
   }
 
   .list-item .list-text {
