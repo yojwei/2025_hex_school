@@ -160,7 +160,7 @@ h2.title {
 
 .list-text i {
   font-size: 48px;
-  color: #6c757d;
+  color: #0027d5;
 }
 
 .list {
@@ -173,4 +173,39 @@ h2.title {
 .list-item {
   list-style: none;
   display: flex;
+}
+
+/* 平板裝置的媒體查詢 */
+@media (max-width: 992px) {
+  h2.title {
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .list {
+    gap: 32px;
+    padding: 0 12px;
+  }
+
+  .list-item {
+    flex-direction: column;
+  }
+
+  .list-item .list-img {
+    width: 100%;
+  }
+
+  .list-item .list-text {
+    width: 100%;
+    margin: 0%;
+  }
+
+  .list-item + .reverse {
+    flex-direction: column;
+  }
+
+  .list-item + .reverse > .list-img {
+    margin: 0;
+  }
 }
