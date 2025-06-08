@@ -317,7 +317,7 @@ footer {
 
 .posts-list li {
   width: calc(33.3% - 24px); /* 三欄佈局，減去間距 */
-  padding: 40px 0;
+  padding-top: 40px;
 }
 
 /* card */
@@ -362,4 +362,45 @@ footer {
 
 .posts-list .card-footer {
   padding: 15px 20px;
+}
+
+/* 平板裝置的媒體查詢 */
+@media (max-width: 992px) {
+  .posts-list li {
+    width: calc(50% - 24px); /* 兩欄佈局，減去間距 */
+  }
+}
+
+/* 小型平板與大型手機的媒體查詢 */
+@media (max-width: 767px) {
+  .search {
+    padding: 12px 0;
+    width: auto;
+  }
+
+  .posts-list {
+    gap: 32px; /* 調整間距 */
+  }
+
+  .posts-list li {
+    width: 100%; /* 單欄佈局 */
+    padding: 0 12px; /* 調整內邊距 */
+  }
+}
+
+/* 小型手機的媒體查詢 */
+@media (max-width: 576px) {
+  .search {
+    padding: 12px 0;
+    width: auto;
+  }
+
+  .posts-list {
+    gap: 32px; /* 調整間距 */
+  }
+
+  .posts-list li {
+    width: 100%; /* 單欄佈局 */
+    padding: 0 12px; /* 調整內邊距 */
+  }
 }
