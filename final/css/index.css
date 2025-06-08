@@ -247,18 +247,16 @@ h2.title {
   border: 1px solid #6c757d;
   background: #fbfbfb;
   display: flex;
-  gap: 24px;
 }
 
 /* posts-list */
 .posts-list {
   list-style: none;
   display: flex;
-  gap: 24px; /* 元素之間的間距 */
 }
 
 .posts-list li {
-  width: calc(33.3% - 24px); /* 三欄佈局，減去間距 */
+  width: calc(30% - 12px); /* 三欄佈局，減去間距 */
   padding: 40px 0;
 }
 
@@ -344,4 +342,52 @@ h2.title {
 .read-more:hover {
   background-color: #000000;
   color: #ffffff;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.swiper-button-prev {
+  left: -20px;
+}
+
+.swiper-button-next {
+  right: -20px;
+}
+
+.swiper-button-prev i,
+.swiper-button-next i {
+  color: #333;
+  font-size: 44px;
+}
+
+.swiper {
+  width: 90%;
+}
+
+.swiper-wrapper-area {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
