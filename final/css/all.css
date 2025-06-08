@@ -430,3 +430,39 @@ footer {
 .page-link:hover {
   background-color: #f0f0f0;
 }
+
+/* contact */
+.contact {
+  font-size: 32px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-links-item {
+  color: #0027d5;
+  list-style: none;
+  font-size: 24px;
+}
+
+/* 小型平板與大型手機的媒體查詢 */
+@media (max-width: 767px) {
+  .contact {
+    display: none;
+  }
+}
+
+/* 小型手機的媒體查詢 */
+@media (max-width: 576px) {
+  .contact {
+    display: none;
+  }
+}
