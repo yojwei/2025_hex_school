@@ -163,6 +163,16 @@ h2.title {
   color: #0027d5;
 }
 
+.list-text .list-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.list-text p {
+  color: #4b4b4b;
+}
+
 .list {
   display: flex;
   flex-direction: column;
@@ -178,8 +188,6 @@ h2.title {
 /* 平板裝置的媒體查詢 */
 @media (max-width: 992px) {
   h2.title {
-    font-size: 64px;
-    font-weight: 700;
     text-align: center;
   }
 
