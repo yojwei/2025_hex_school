@@ -95,6 +95,11 @@ i {
 
 .nav-item:hover {
   border-bottom: gray 2px solid;
+  color: #0027d5;
+}
+
+.navbar .active {
+  color: #0027d5;
 }
 
 footer {
