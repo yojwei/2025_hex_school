@@ -249,3 +249,59 @@ h2.title {
   display: flex;
   gap: 24px;
 }
+
+/* posts-list */
+.posts-list {
+  list-style: none;
+  display: flex;
+  gap: 24px; /* 元素之間的間距 */
+}
+
+.posts-list li {
+  width: calc(33.3% - 24px); /* 三欄佈局，減去間距 */
+  padding: 40px 0;
+}
+
+/* card */
+.posts-list .card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden; /* 隱藏超出邊界的內容 */
+  height: 100%; /* 讓卡片高度自適應 */
+  display: flex;
+  flex-direction: column; /* 垂直排列 */
+  gap: 16px; /* 卡片內部元素之間的間距 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.posts-list .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.posts-list .card-header img {
+  width: 100%; /* 圖片寬度100% */
+  height: auto; /* 高度自動 */
+  object-fit: cover; /* 確保圖片覆蓋整個區域 */
+  display: block;
+}
+
+.posts-list .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-grow: 1; /* 允許內容區域擴展以填滿剩餘空間 */
+}
+
+.posts-list .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  height: 100%; /* 統一高度 */
+  overflow: hidden; /* 隱藏超出內容 */
+}
+
+.posts-list .card-footer {
+  padding: 15px 20px;
+}
