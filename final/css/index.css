@@ -112,3 +112,65 @@
     position: unset;
   }
 }
+
+h2.title {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+/* service */
+.service {
+  border: 1px solid #6c757d;
+  padding: 80px 0;
+}
+
+.service .container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.list-item {
+  display: flex;
+}
+
+.list-item + .reverse {
+  flex-direction: row-reverse;
+}
+
+.list-item .list-img {
+  width: 59.9%;
+  margin-right: -40px;
+}
+
+.list-item + .reverse > .list-img {
+  margin-right: 0;
+  margin-left: -40px;
+}
+
+.list-item .list-text {
+  position: relative;
+  width: calc(40.1% + 40px);
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加陰影 */
+  margin: 55px 0;
+  padding: 24px;
+}
+
+.list-text i {
+  font-size: 48px;
+  color: #6c757d;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding: 0 110px;
+}
+
+.list-item {
+  list-style: none;
+  display: flex;
+}
