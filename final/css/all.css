@@ -317,7 +317,7 @@ footer {
 
 .posts-list li {
   width: calc(33.3% - 24px); /* 三欄佈局，減去間距 */
-  padding-top: 40px;
+  padding: 40px 0;
 }
 
 /* card */
