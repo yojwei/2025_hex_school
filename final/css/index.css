@@ -191,6 +191,13 @@ h2.title {
   display: flex;
 }
 
+.contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-size: 42px;
+}
+
 /* 平板裝置的媒體查詢 */
 @media (max-width: 992px) {
   h2.title {
@@ -226,5 +233,10 @@ h2.title {
 
   .list-item + .reverse > .list-img {
     margin: 0;
+  }
+
+  .contact-btn {
+    flex-direction: column;
+    align-items: end;
   }
 }
