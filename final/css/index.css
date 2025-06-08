@@ -257,6 +257,7 @@ h2.title {
 
 .posts-list li {
   width: calc(30% - 12px); /* 三欄佈局，減去間距 */
+  height: auto;
   padding: 40px 0;
 }
 
