@@ -594,6 +594,8 @@ h2.title {
 }
 
 .news .card {
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
   padding: 80px;
   gap: 24px;
@@ -611,17 +613,14 @@ h2.title {
 .news .card-body {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  margin: 32px 0;
+  gap: 8px;
 }
 
 .news .card-body input {
-  width: 100%;
-  padding: 16px 24px;
-  border: 1px solid #cccccc;
+  padding: 8px 16px;
+  background-color: #f1f1f1;
+  font-size: 20px;
   border-radius: 8px;
-  font-size: 18px;
-  transition: all 0.3s ease;
 }
 
 .news .card-body input:focus {
@@ -630,26 +629,12 @@ h2.title {
   box-shadow: 0 0 8px rgba(0, 39, 213, 0.2);
 }
 
-.news .card-body input::placeholder {
-  color: #999999;
-}
-
-.news .card-footer .news-button {
-  background-color: #0027d5;
-  color: white;
-  border: none;
+.news .card-footer .news-btn {
+  border: 1px solid #0027d5;
+  background-color: white;
+  padding: 8px 16px;
   border-radius: 40px;
-  padding: 12px 32px;
-  font-size: 18px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.news .card-footer .news-button:hover {
-  background-color: #001e9e;
-}
-
-.news .description .card-body .input-group input {
-  width: 100%;
+  text-decoration: none;
+  font-weight: 700;
+  color: #0027d5;
 }
