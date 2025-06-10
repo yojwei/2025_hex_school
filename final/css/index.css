@@ -398,9 +398,6 @@ h2.title {
   padding: 80px 0;
   border: 1px solid #6c757d;
   background: #fbfbfb;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
 }
 
 .feature-content {
@@ -636,5 +633,43 @@ h2.title {
   border-radius: 40px;
   text-decoration: none;
   font-weight: 700;
+}
+
+/* contact */
+.contact {
+  padding: 80px 0;
+  border: 1px solid #6c757d;
+  background-color: #fbfbfb;
+}
+
+.contact .container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 28px;
+}
+
+.contact-list .list-item .contact-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  border-bottom: 1px solid #6c757d;
+}
+
+.contact-list .list-item .mail {
+  font-size: 32px;
+}
+
+.contact-list .list-item .media i {
+  width: 44px;
+  height: 44px;
   color: #0027d5;
 }
