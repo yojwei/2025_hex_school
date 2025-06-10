@@ -392,3 +392,46 @@ h2.title {
   justify-content: center;
   overflow: hidden;
 }
+
+/* feature */
+.feature {
+  padding: 80px 0;
+  border: 1px solid #6c757d;
+  background: #fbfbfb;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.feature-intro {
+  display: flex;
+  gap: 12px;
+}
+
+.feature-photo {
+  width: 1076px; /* fixed width */
+  margin-right: -525px;
+}
+
+.feature-photo img {
+  background: #ededed;
+  padding: 24px;
+  border-radius: 5px;
+}
+
+.feature-intro-card {
+  width: 745px; /* fixed width */
+  position: relative;
+}
+
+.feature-intro-card-item {
+  width: 70%;
+  padding: 80px 40px;
+  background: #fff;
+}
