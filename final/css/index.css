@@ -566,3 +566,90 @@ h2.title {
     margin: 0;
   }
 }
+
+/* news */
+.news {
+  display: flex;
+}
+
+.news-photo {
+  width: 50%;
+  height: 834px;
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/index/photo9.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.news-content {
+  width: 50%;
+  padding: 0 80px;
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/index/Hero%20Section2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.news .card {
+  background-color: #fff;
+  padding: 80px;
+  gap: 24px;
+  border-radius: 10px;
+}
+
+.news .description {
+  font-size: 20px;
+}
+
+.news .description span {
+  color: #0027d5;
+}
+
+.news .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.news .card-body input {
+  width: 100%;
+  padding: 16px 24px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.news .card-body input:focus {
+  outline: none;
+  border-color: #0027d5;
+  box-shadow: 0 0 8px rgba(0, 39, 213, 0.2);
+}
+
+.news .card-body input::placeholder {
+  color: #999999;
+}
+
+.news .card-footer .news-button {
+  background-color: #0027d5;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  padding: 12px 32px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.news .card-footer .news-button:hover {
+  background-color: #001e9e;
+}
+
+.news .description .card-body .input-group input {
+  width: 100%;
+}
