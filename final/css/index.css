@@ -1,0 +1,719 @@
+@import url("./all.css");
+
+/* index page */
+.banner-profile {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 90px); /* 90px 是 navbar 的高度，製造好看的畫面(滿版) */
+}
+
+.banner-photo {
+  width: 50%;
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/index/Hero%20Section.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #0027d5;
+  padding-left: 80px;
+  gap: 12px;
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/index/Hero%20Section2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner-title {
+  font-size: 120px;
+  font-weight: 900;
+}
+
+.banner-description {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.banner-intro {
+  position: relative;
+  padding: 80px 40px;
+  width: 56%;
+  right: 0;
+  bottom: 160px;
+  margin-right: 80px;
+  margin-left: auto;
+  font-size: 28px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加陰影 */
+}
+
+.banner-intro p {
+  margin-bottom: 16px;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-links-item {
+  color: #0027d5;
+  list-style: none;
+  font-size: 24px;
+}
+
+/* 平板裝置的媒體查詢 */
+@media (max-width: 992px) {
+  .banner-text {
+    padding-left: 40px;
+  }
+}
+
+/* 小型平板與大型手機的媒體查詢 */
+@media (max-width: 767px) {
+  .banner {
+    flex-direction: column;
+  }
+
+  .banner-profile {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .banner-photo,
+  .banner-text,
+  .banner-intro {
+    width: 100%;
+  }
+
+  .banner-photo {
+    height: calc(
+      100vh - 90px - 180px
+    ); /* 減去 navbar 的高度和 banner-text 的高度 */
+  }
+
+  .banner-text {
+    padding: 24px;
+    text-align: center;
+  }
+
+  .banner-title {
+    font-size: 52px;
+  }
+
+  .banner-intro {
+    position: unset;
+  }
+}
+
+h2.title {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+/* service */
+.service {
+  border: 1px solid #6c757d;
+  padding: 80px 0;
+}
+
+.service .container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.list-item {
+  display: flex;
+}
+
+.list-item + .reverse {
+  flex-direction: row-reverse;
+}
+
+.list-item .list-img {
+  width: 59.9%;
+  margin-right: -40px;
+}
+
+.list-item .list-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.list-item + .reverse > .list-img {
+  margin-right: 0;
+  margin-left: -40px;
+}
+
+.list-item .list-text {
+  position: relative;
+  width: calc(40.1% + 40px);
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加陰影 */
+  margin: 55px 0;
+  padding: 24px;
+}
+
+.list-text i {
+  font-size: 48px;
+  color: #0027d5;
+}
+
+.list-text .list-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.list-text p {
+  color: #4b4b4b;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding: 0 110px;
+}
+
+.list-item {
+  list-style: none;
+  display: flex;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-size: 42px;
+}
+
+/* 平板裝置的媒體查詢 */
+@media (max-width: 992px) {
+  h2.title {
+    text-align: center;
+  }
+
+  .list {
+    gap: 32px;
+    padding: 0 12px;
+  }
+
+  .list-item {
+    flex-direction: column;
+  }
+
+  .list-item .list-img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .list-img img {
+    width: 100%;
+  }
+
+  .list-item .list-text {
+    width: 100%;
+    margin: 0;
+  }
+
+  .list-item + .reverse {
+    flex-direction: column;
+  }
+
+  .list-item + .reverse > .list-img {
+    margin: 0;
+  }
+
+  .contact-btn {
+    flex-direction: column;
+    align-items: end;
+  }
+}
+
+/* case */
+.case {
+  padding: 80px 0;
+  border: 1px solid #6c757d;
+  background: #fbfbfb;
+  display: flex;
+}
+
+/* posts-list */
+.posts-list {
+  list-style: none;
+  display: flex;
+}
+
+.posts-list li {
+  width: calc(30% - 12px); /* 三欄佈局，減去間距 */
+  height: auto;
+  padding: 40px 0;
+}
+
+/* card */
+.posts-list .card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden; /* 隱藏超出邊界的內容 */
+  height: 100%; /* 讓卡片高度自適應 */
+  display: flex;
+  flex-direction: column; /* 垂直排列 */
+  gap: 16px; /* 卡片內部元素之間的間距 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.posts-list .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.posts-list .card-header img {
+  width: 100%; /* 圖片寬度100% */
+  height: auto; /* 高度自動 */
+  object-fit: cover; /* 確保圖片覆蓋整個區域 */
+  display: block;
+}
+
+.posts-list .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-grow: 1; /* 允許內容區域擴展以填滿剩餘空間 */
+}
+
+.posts-list .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  height: 100%; /* 統一高度 */
+  overflow: hidden; /* 隱藏超出內容 */
+}
+
+.posts-list .card-footer {
+  padding: 15px 20px;
+}
+
+.hashtag {
+  display: flex;
+  font-size: 24px;
+  color: #0027d5;
+  align-items: center;
+  gap: 8px;
+}
+
+.latest {
+  border-radius: 40px;
+  padding: 6px 12px;
+  background: #0027d5;
+  color: #fff;
+  font-size: 16px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.read-more {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 40px;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+.read-more:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.swiper-button-prev {
+  left: -20px;
+}
+
+.swiper-button-next {
+  right: -20px;
+}
+
+.swiper-button-prev i,
+.swiper-button-next i {
+  color: #333;
+  font-size: 44px;
+}
+
+.swiper {
+  width: 90%;
+}
+
+.swiper-wrapper-area {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* feature */
+.feature {
+  padding: 80px 0;
+  border: 1px solid #6c757d;
+  background: #fbfbfb;
+}
+
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.feature-intro {
+  display: flex;
+  gap: 12px;
+}
+
+.feature-photo {
+  width: 1076px; /* fixed width */
+  margin-right: -525px;
+}
+
+.feature-photo img {
+  background: #ededed;
+  padding: 24px;
+  border-radius: 5px;
+}
+
+.feature-intro-card {
+  width: 745px; /* fixed width */
+  position: relative;
+  margin: 29px 0;
+}
+
+.feature-intro-card-item {
+  width: 70%;
+  padding: 80px 40px;
+  background: #fff;
+}
+
+.feature-intro-card-item .list-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.feature-intro-reservation {
+  background-color: #f5f5f5;
+  position: absolute;
+  right: 0;
+  margin-top: -40px;
+}
+
+.feature-intro-reservation a {
+  background-color: white;
+  border: 1px solid #0027d5;
+  padding: 8px 16px;
+  border-radius: 40px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.feature-list {
+  background-color: #f5f5f5;
+}
+
+.feature-list .list-item {
+  width: calc(25% - 16px); /* 四欄佈局，減去間距 */
+}
+
+.feature-list .list {
+  display: flex;
+  flex-direction: row;
+  padding: 24px;
+  gap: 16px;
+}
+
+@media (max-width: 992px) {
+  .feature-list .list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 16px;
+  }
+  .feature-list .list-item {
+    width: calc(50% - 16px);
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .feature-list .list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 16px;
+  }
+  .feature-list .list-item {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
+
+.feature-list .card {
+  height: 100%; /* 統一高度 */
+  overflow: hidden; /* 隱藏超出內容 */
+  display: flex;
+  flex-direction: column; /* 垂直排列 */
+  gap: 16px; /* 卡片內部元素之間的間距 */
+}
+
+.feature-list .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-bottom: 1px solid black;
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
+
+.feature-list .card-body .title {
+  font-size: 24px;
+}
+
+.feature-list .list i {
+  color: #0027d5;
+  margin-right: 8px;
+}
+
+.feature-list .card-footer a {
+  background-color: white;
+  border: 1px solid black;
+  padding: 8px 16px;
+  border-radius: 40px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* 平板裝置的媒體查詢 */
+@media (max-width: 992px) {
+  .feature-content {
+    gap: 12px;
+  }
+
+  .feature-intro {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .feature-photo {
+    width: 100%;
+    padding: 0 24px;
+  }
+
+  .feature-intro-card {
+    width: 100%;
+    margin: 0;
+  }
+
+  .feature-intro-card-item {
+    width: 100%;
+    background: #fff;
+    padding: 40px 24px;
+  }
+
+  .feature-intro-reservation {
+    position: unset;
+    background-color: #f5f5f5;
+    margin: 0;
+  }
+}
+
+/* news */
+.news {
+  display: flex;
+}
+
+.news-photo {
+  width: 50%;
+  height: 834px;
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/index/photo9.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.news-content {
+  width: 50%;
+  padding: 0 80px;
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/index/Hero%20Section2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.news .card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 80px;
+  gap: 24px;
+  border-radius: 10px;
+}
+
+.news .description {
+  font-size: 20px;
+}
+
+.news .description span {
+  color: #0027d5;
+}
+
+.news .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.news .card-body input {
+  padding: 8px 16px;
+  background-color: #f1f1f1;
+  font-size: 20px;
+  border-radius: 8px;
+}
+
+.news .card-body input:focus {
+  outline: none;
+  border-color: #0027d5;
+  box-shadow: 0 0 8px rgba(0, 39, 213, 0.2);
+}
+
+.news .card-footer .news-btn {
+  border: 1px solid #0027d5;
+  background-color: white;
+  padding: 8px 16px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* 平板裝置的媒體查詢 */
+@media (max-width: 992px) {
+  .news {
+    flex-direction: column;
+  }
+
+  .news-photo {
+    width: 100%;
+    height: 400px; /* 調整高度以適應小螢幕 */
+    background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/index/photo9.png");
+  }
+
+  .news-content {
+    width: 100%;
+    padding: 24px;
+    background-image: none; /* 移除背景圖片 */
+  }
+
+  .news .card {
+    padding: 40px;
+  }
+}
+
+/* contact */
+.contact {
+  padding: 80px 0;
+  border: 1px solid #6c757d;
+  background-color: #fbfbfb;
+}
+
+.contact .container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 28px;
+}
+
+.contact-list .list-item .contact-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  border-bottom: 1px solid #6c757d;
+}
+
+.contact-list .list-item .mail {
+  font-size: 32px;
+}
+
+.contact-list .list-item .media i {
+  width: 44px;
+  height: 44px;
+  color: #0027d5;
+}
+
+/* 平板裝置的媒體查詢 */
+@media (max-width: 992px) {
+  .contact-list {
+    flex-direction: column;
+  }
+
+  .contact-list .list-item .contact-link {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-list .list-item .mail {
+    font-size: 24px;
+  }
+
+  .contact-list .list-item .media i {
+    width: 32px;
+    height: 32px;
+  }
+}
