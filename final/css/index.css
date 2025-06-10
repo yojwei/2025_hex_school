@@ -392,3 +392,41 @@ h2.title {
   justify-content: center;
   overflow: hidden;
 }
+
+.contact {
+  padding: 80px 0;
+  border: 1px solid #6c757d;
+  background-color: #fbfbfb;
+}
+
+.contact .container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 28px;
+}
+
+.contact-list .list-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  border-bottom: 1px solid #6c757d;
+}
+
+.contact-list .list-item .mail {
+  font-size: 32px;
+}
+
+.contact-list .list-item .media i {
+  width: 44px;
+  height: 44px;
+  color: #0027d5;
+  margin-right: 8px;
+}
