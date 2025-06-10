@@ -412,9 +412,10 @@ h2.title {
   font-size: 28px;
 }
 
-.contact-list .list-item {
+.contact-list .list-item .contact-link {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 16px;
   width: 100%;
   border-bottom: 1px solid #6c757d;
@@ -428,5 +429,4 @@ h2.title {
   width: 44px;
   height: 44px;
   color: #0027d5;
-  margin-right: 8px;
 }
