@@ -475,6 +475,30 @@ h2.title {
   gap: 16px;
 }
 
+@media (max-width: 992px) {
+  .feature-list .list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 16px;
+  }
+  .feature-list .list-item {
+    width: calc(50% - 16px);
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .feature-list .list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 16px;
+  }
+  .feature-list .list-item {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
+
 .feature-list .card {
   height: 100%; /* 統一高度 */
   overflow: hidden; /* 隱藏超出內容 */
